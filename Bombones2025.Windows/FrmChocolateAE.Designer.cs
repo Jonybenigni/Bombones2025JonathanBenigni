@@ -39,7 +39,7 @@
             // 
             // BtnCancelar
             // 
-            BtnCancelar.Location = new Point(371, 161);
+            BtnCancelar.Location = new Point(383, 161);
             BtnCancelar.Margin = new Padding(3, 4, 3, 4);
             BtnCancelar.Name = "BtnCancelar";
             BtnCancelar.Size = new Size(86, 69);
@@ -50,7 +50,7 @@
             // 
             // BtnOK
             // 
-            BtnOK.Location = new Point(202, 161);
+            BtnOK.Location = new Point(116, 161);
             BtnOK.Margin = new Padding(3, 4, 3, 4);
             BtnOK.Name = "BtnOK";
             BtnOK.Size = new Size(86, 69);

@@ -1,0 +1,10 @@
+﻿1|Chocolate negro  
+2|Chocolate con leche  
+3|Chocolate blanco  
+4|Chocolate amargo  
+5|Chocolate semiamargo  
+6|Chocolate rubí  
+7|Chocolate con almendras  
+8|Chocolate con avellanas  
+9|Chocolate relleno  
+10|Chocolate con menta  

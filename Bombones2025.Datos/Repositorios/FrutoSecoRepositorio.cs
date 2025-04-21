@@ -18,7 +18,7 @@ namespace Bombones2025.Datos.Repositorios
         /// <returns></returns>
         public List<FrutoSeco> GetLista()
         {
-            return frutosSecos;
+            return frutosSecos.OrderBy(p => p.NombreFrutosSecos).ToList();
         }
         /// <summary>
         /// Método para leer los países desde el archivo secuencial

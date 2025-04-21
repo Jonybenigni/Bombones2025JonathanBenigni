@@ -61,17 +61,23 @@ namespace Bombones2025.Datos.Repositorios
                     ChocolateId = ChocolateId,
                 };
             }
-            /// <summary>
-            /// Método para retornar el id  más alto  que tengo
-            /// dentro de la lista de Paises, sumándole 1
-            /// </summary>
-            /// <returns></returns>
-            private int SetearChocolateId()
-            {
-                return chocolates.Max(p => p.ChocolateId) + 1;
-            }
+        /// <summary>
+        /// Método para retornar el id  más alto  que tengo
+        /// dentro de la lista de Paises, sumándole 1
+        /// </summary>
+        /// <returns></returns>
+        
 
-            public bool Existe(Chocolate chocolate)
+        private int SetearChocolateId()
+        {
+            if (chocolates.Any())
+                return chocolates.Max(p => p.ChocolateId) + 1;
+            else
+                return 1; 
+        }
+
+
+        public bool Existe(Chocolate chocolate)
             {
                 return chocolate.ChocolateId == 0 ? chocolates.Any(p => p.NombreChocolate == chocolate.NombreChocolate) :
                     chocolates.Any(p => p.NombreChocolate == chocolate.NombreChocolate && p.ChocolateId != chocolate.ChocolateId);

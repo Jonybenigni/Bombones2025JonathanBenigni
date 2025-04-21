@@ -123,5 +123,10 @@ namespace Bombones2025.Windows
         {
 
         }
+
+        private void tsbSalir_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

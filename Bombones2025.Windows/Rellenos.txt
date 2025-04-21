@@ -1,0 +1,10 @@
+﻿1|Relleno de dulce de leche
+2|Relleno de crema de avellanas
+3|Relleno de menta
+4|Relleno de licor
+5|Relleno de frutilla
+6|Relleno de coco
+7|Relleno de almendra
+8|Relleno de caramelo
+9|Relleno de café
+10|Relleno de frutos rojos

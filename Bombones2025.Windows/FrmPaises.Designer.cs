@@ -105,6 +105,7 @@
             dgvDatos.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgvDatos.Size = new Size(914, 604);
             dgvDatos.TabIndex = 2;
+            dgvDatos.CellContentClick += dgvDatos_CellContentClick;
             // 
             // colId
             // 
@@ -141,6 +142,7 @@
             CboPaginas.Name = "CboPaginas";
             CboPaginas.Size = new Size(77, 28);
             CboPaginas.TabIndex = 18;
+            CboPaginas.SelectedIndexChanged += CboPaginas_SelectedIndexChanged;
             // 
             // label2
             // 
@@ -304,6 +306,7 @@
             toolStrip1.Size = new Size(914, 67);
             toolStrip1.TabIndex = 4;
             toolStrip1.Text = "toolStrip1";
+            toolStrip1.ItemClicked += toolStrip1_ItemClicked;
             // 
             // FrmPaises
             // 

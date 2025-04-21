@@ -42,6 +42,8 @@
             tsbSalir = new ToolStripButton();
             splitContainer1 = new SplitContainer();
             DgvFrutosSecos = new DataGridView();
+            IdFrutosSecos = new DataGridViewTextBoxColumn();
+            ColFrutosSecos = new DataGridViewTextBoxColumn();
             BtnUltimo = new Button();
             BtnSiguiente = new Button();
             BtnAnterior = new Button();
@@ -50,8 +52,6 @@
             TxtCantidadPaginas = new TextBox();
             label1 = new Label();
             CboPaginas = new ComboBox();
-            IdFrutosSecos = new DataGridViewTextBoxColumn();
-            ColFrutosSecos = new DataGridViewTextBoxColumn();
             toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)splitContainer1).BeginInit();
             splitContainer1.Panel1.SuspendLayout();
@@ -183,15 +183,36 @@
             // DgvFrutosSecos
             // 
             DgvFrutosSecos.AllowUserToAddRows = false;
-            DgvFrutosSecos.AllowUserToOrderColumns = true;
+            DgvFrutosSecos.AllowUserToDeleteRows = false;
             DgvFrutosSecos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             DgvFrutosSecos.Columns.AddRange(new DataGridViewColumn[] { IdFrutosSecos, ColFrutosSecos });
             DgvFrutosSecos.Dock = DockStyle.Fill;
             DgvFrutosSecos.Location = new Point(0, 0);
             DgvFrutosSecos.Name = "DgvFrutosSecos";
+            DgvFrutosSecos.ReadOnly = true;
             DgvFrutosSecos.RowHeadersWidth = 51;
             DgvFrutosSecos.Size = new Size(800, 251);
             DgvFrutosSecos.TabIndex = 0;
+            // 
+            // IdFrutosSecos
+            // 
+            IdFrutosSecos.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+            IdFrutosSecos.HeaderText = "IdFrutosSecos";
+            IdFrutosSecos.MinimumWidth = 6;
+            IdFrutosSecos.Name = "IdFrutosSecos";
+            IdFrutosSecos.ReadOnly = true;
+            IdFrutosSecos.Resizable = DataGridViewTriState.True;
+            IdFrutosSecos.Visible = false;
+            IdFrutosSecos.Width = 129;
+            // 
+            // ColFrutosSecos
+            // 
+            ColFrutosSecos.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            ColFrutosSecos.HeaderText = "FrutosSecos";
+            ColFrutosSecos.MinimumWidth = 6;
+            ColFrutosSecos.Name = "ColFrutosSecos";
+            ColFrutosSecos.ReadOnly = true;
+            ColFrutosSecos.Resizable = DataGridViewTriState.True;
             // 
             // BtnUltimo
             // 
@@ -273,24 +294,6 @@
             CboPaginas.Name = "CboPaginas";
             CboPaginas.Size = new Size(77, 28);
             CboPaginas.TabIndex = 19;
-            // 
-            // IdFrutosSecos
-            // 
-            IdFrutosSecos.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
-            IdFrutosSecos.HeaderText = "IdFrutosSecos";
-            IdFrutosSecos.MinimumWidth = 6;
-            IdFrutosSecos.Name = "IdFrutosSecos";
-            IdFrutosSecos.Resizable = DataGridViewTriState.True;
-            IdFrutosSecos.Visible = false;
-            IdFrutosSecos.Width = 129;
-            // 
-            // ColFrutosSecos
-            // 
-            ColFrutosSecos.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            ColFrutosSecos.HeaderText = "FrutosSecos";
-            ColFrutosSecos.MinimumWidth = 6;
-            ColFrutosSecos.Name = "ColFrutosSecos";
-            ColFrutosSecos.Resizable = DataGridViewTriState.True;
             // 
             // FrmFrutosSecos
             // 

@@ -153,6 +153,7 @@
             tsbSalir.Size = new Size(42, 44);
             tsbSalir.Text = "Salir";
             tsbSalir.TextImageRelation = TextImageRelation.ImageAboveText;
+            tsbSalir.Click += tsbSalir_Click;
             // 
             // splitContainer1
             // 

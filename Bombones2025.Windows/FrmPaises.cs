@@ -136,5 +136,20 @@ namespace Bombones2025.Windows
         {
 
         }
+
+        private void dgvDatos_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void CboPaginas_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
     }
 }

@@ -30,7 +30,7 @@
         {
             BtnPaises = new Button();
             btnFrutoSeco = new Button();
-            button2 = new Button();
+            btnRelleno = new Button();
             btnChocolate = new Button();
             SuspendLayout();
             // 
@@ -56,15 +56,16 @@
             btnFrutoSeco.UseVisualStyleBackColor = true;
             btnFrutoSeco.Click += btnFrutoSeco_Click;
             // 
-            // button2
+            // btnRelleno
             // 
-            button2.Location = new Point(361, 61);
-            button2.Margin = new Padding(3, 4, 3, 4);
-            button2.Name = "button2";
-            button2.Size = new Size(99, 72);
-            button2.TabIndex = 2;
-            button2.Text = "Relleno";
-            button2.UseVisualStyleBackColor = true;
+            btnRelleno.Location = new Point(361, 61);
+            btnRelleno.Margin = new Padding(3, 4, 3, 4);
+            btnRelleno.Name = "btnRelleno";
+            btnRelleno.Size = new Size(99, 72);
+            btnRelleno.TabIndex = 2;
+            btnRelleno.Text = "Relleno";
+            btnRelleno.UseVisualStyleBackColor = true;
+            btnRelleno.Click += btnRelleno_Click;
             // 
             // btnChocolate
             // 
@@ -83,7 +84,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(914, 600);
             Controls.Add(btnChocolate);
-            Controls.Add(button2);
+            Controls.Add(btnRelleno);
             Controls.Add(btnFrutoSeco);
             Controls.Add(BtnPaises);
             Margin = new Padding(3, 4, 3, 4);
@@ -96,7 +97,7 @@
 
         private Button BtnPaises;
         private Button btnFrutoSeco;
-        private Button button2;
+        private Button btnRelleno;
         private Button btnChocolate;
     }
 }

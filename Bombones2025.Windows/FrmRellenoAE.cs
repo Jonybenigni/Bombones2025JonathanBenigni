@@ -11,66 +11,67 @@ using System.Windows.Forms;
 
 namespace Bombones2025.Windows
 {
-    public partial class FrmChocolateAE : Form
+    public partial class FrmRellenoAE : Form
     {
-        private Chocolate? chocolate;
-        public FrmChocolateAE()
+
+        private Relleno? relleno;
+        public FrmRellenoAE()
         {
             InitializeComponent();
         }
-
         protected override void OnLoad(EventArgs e)
         {
             base.OnLoad(e);
-            if (chocolate is not null)
+            if (relleno is not null)
             {
-                TxtChocolate.Text = chocolate.NombreChocolate;
+                TxtRelleno.Text = relleno.NombreRelleno;
             }
         }
-        public Chocolate? GetChocolate()
+        public Relleno? GetRellenos()
         {
-            return chocolate;
-        }
-        public void SetChocolate(Chocolate chocolate)
-        {
-            this.chocolate = chocolate;
+            return relleno;
         }
 
         private bool ValidarDatos()
         {
             bool valido = true;
             errorProvider1.Clear();
-            if (string.IsNullOrEmpty(TxtChocolate.Text))
+            if (string.IsNullOrEmpty(TxtRelleno.Text))
             {
                 valido = false;
-                errorProvider1.SetError(TxtChocolate, "El nombre es requerido");
+                errorProvider1.SetError(TxtRelleno, "El nombre es requerido");
 
             }
             return valido;
         }
 
-
-        private void FrmChocolateAE_Load(object sender, EventArgs e)
+        public void SetRelleno(Relleno relleno)
         {
-
+            this.relleno = relleno;
         }
 
-        private void BtnOK_Click(object sender, EventArgs e)
+        private void BtnOKRelleno_Click(object sender, EventArgs e)
         {
+
             if (ValidarDatos())
             {
-                if (chocolate is null)
+                if (relleno is null)
                 {
-                    chocolate = new Chocolate();
+                    relleno = new Relleno();
 
                 }
-                chocolate.NombreChocolate = TxtChocolate.Text;
+                relleno.NombreRelleno = TxtRelleno.Text;
 
                 DialogResult = DialogResult.OK;
             }
         }
 
-        private void BtnCancelar_Click(object sender, EventArgs e)
+        private void FrmRellenoAE_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnCancelarRelleno_Click(object sender, EventArgs e)
         {
             DialogResult = DialogResult.Cancel;
         }
