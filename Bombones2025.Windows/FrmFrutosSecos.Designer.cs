@@ -304,6 +304,7 @@
             Controls.Add(toolStrip1);
             Name = "FrmFrutosSecos";
             Text = "FrmFrutosSecos";
+            Load += FrmFrutosSecos_Load;
             toolStrip1.ResumeLayout(false);
             toolStrip1.PerformLayout();
             splitContainer1.Panel1.ResumeLayout(false);

@@ -29,7 +29,7 @@ namespace Bombones2025.Windows
         {
 
             FrutoSecoServicio servicio = new FrutoSecoServicio("FrutosSecos.Txt");
-            FrmFrutosSecos frm = new FrmFrutosSecos(servicio) { Text = "Listado de Paises" };
+            FrmFrutosSecos frm = new FrmFrutosSecos(servicio) { Text = "Listado de Frutos Secos" };
             frm.ShowDialog(this);
         }
 

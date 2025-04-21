@@ -135,5 +135,11 @@ namespace Bombones2025.Windows
         {
             Close();
         }
+
+        private void FrmRelleno_Load_1(object sender, EventArgs e)
+        {
+            _rellenos = _rellenoServicio.GetRelleno();
+            MostrarDatosEnGrilla();
+        }
     }
 }

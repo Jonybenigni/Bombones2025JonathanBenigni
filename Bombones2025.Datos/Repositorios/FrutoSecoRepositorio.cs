@@ -57,7 +57,10 @@ namespace Bombones2025.Datos.Repositorios
 
         private int SetearFrutosSecosId()
         {
-            return frutosSecos.Max(p => p.FrutoSecoId) + 1;
+            if (frutosSecos.Any())
+                return frutosSecos.Max(p => p.FrutoSecoId) + 1;
+            else
+                return 1;
         }
         public bool Existe(FrutoSeco frutoSeco)
         {

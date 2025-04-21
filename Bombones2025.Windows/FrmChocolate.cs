@@ -36,6 +36,18 @@ namespace Bombones2025.Windows
             DgvDatosChocolate.Rows.Add(r);
         }
 
+        private void MostrarDatosEnGrilla()
+        {
+            DgvDatosChocolate.Rows.Clear();
+            foreach (Chocolate chocolate in _Chocolates)
+            {
+                DataGridViewRow r = new DataGridViewRow();
+                r.CreateCells(DgvDatosChocolate);
+                SetearFila(r, chocolate);
+                AgregarFila(r);
+            }
+        }
+
 
         private void tsbNuevo_Click(object sender, EventArgs e)
         {
@@ -127,6 +139,12 @@ namespace Bombones2025.Windows
         private void tsbSalir_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void FrmChocolate_Load(object sender, EventArgs e)
+        {
+            _Chocolates = _chocolateServicio.GetChocolates();
+            MostrarDatosEnGrilla();
         }
     }
 }

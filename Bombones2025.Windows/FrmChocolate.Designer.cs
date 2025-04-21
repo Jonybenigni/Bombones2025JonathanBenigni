@@ -301,6 +301,7 @@
             Controls.Add(toolStrip1);
             Name = "FrmChocolate";
             Text = "FrmChocolate";
+            Load += FrmChocolate_Load;
             toolStrip1.ResumeLayout(false);
             toolStrip1.PerformLayout();
             splitContainer1.Panel1.ResumeLayout(false);

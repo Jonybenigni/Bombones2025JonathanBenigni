@@ -310,6 +310,7 @@
             Controls.Add(toolStrip2);
             Name = "FrmRelleno";
             Text = "FrmRelleno";
+            Load += FrmRelleno_Load_1;
             toolStrip2.ResumeLayout(false);
             toolStrip2.PerformLayout();
             splitContainer1.Panel1.ResumeLayout(false);

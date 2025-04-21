@@ -139,7 +139,13 @@ namespace Bombones2025.Windows
         private void tsbSalir_Click(object sender, EventArgs e)
         {
             Close();
-        
+
+        }
+
+        private void FrmFrutosSecos_Load(object sender, EventArgs e)
+        {
+            _fruto = _frutoServicio.GetLista();
+            MostrarDatosEnGrilla();
         }
     }
 }
